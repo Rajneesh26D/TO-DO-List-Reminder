@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.right-side{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
