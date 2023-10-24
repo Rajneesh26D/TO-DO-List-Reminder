@@ -1,29 +1,26 @@
-.input-div{
+.input-div {
     background-color: black;
     color: white;
-    width: 50%;
+    width: 70%;
     height: 45vh;
     border-radius: 30px;
-    margin: 0px 100px 0px 100px;
-    
+    margin: 0px 100px 0px 100px;  
 }
 
-
-.task-name, .details, .Time{
+.task-name, .details, .time {
     padding: 10px;
 }
 
-.task-header{
+.task-header {
     display: flex;
     font-size: 20px;
-    align-items: start;
-    margin: 0 0 0 20px;
+    align-items: flex-start;
+    margin: 0 0 0 30px;
 }
 
-input{
+input {
     width: 90%;
-    height: 30px;
-    margin: 0 0 0 10px;
+    height: 40px;
+    margin: 0;
     border-radius: 3px;
-
 }
