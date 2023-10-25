@@ -2,21 +2,25 @@ import { useState } from 'react'
 import './input.css'
 
 
-function Input({addList}) {
+function Input({addList, toggleFormVisibility, isFormVisible}) {
     const [input, setInput] = useState('')
     const [details, setDetails] = useState('')
     const [deadline, setDeadline] = useState('')
 
-  
+    const toggleVisibility = () => {
+        toggleFormVisibility(isFormVisible)
+    }
+
     return (
         <form onSubmit={(e)=>{
             e.preventDefault()
-            addList(input,details, deadline)     //calling addList function
+            addList(input,details, deadline) 
             setInput("")
             setDeadline("")
             setDetails("")
+            toggleVisibility()
             }}
-            className='input-div'>
+            className={`input-div ${isFormVisible ? '' : 'hidden'}`}>
         <div>
             <div className="input-task-name">
                 <p className='task-header'>Task Name:</p>
@@ -38,7 +42,7 @@ function Input({addList}) {
             </div>
             <div className="input-time">
                 <p className='task-header'>DeadLine:</p>
-                <input type="text" placeholder='Enter DeadLine' 
+                <input type="date" placeholder='Enter DeadLine' 
                 value={deadline}
                 onChange={e=>{
                     setDeadline(e.target.value)

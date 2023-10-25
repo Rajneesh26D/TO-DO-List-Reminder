@@ -1,39 +1,47 @@
 .input-div {
-    background-color: black;
-    color: white;
-    width: 70%;
-    height: 45vh;
-    border-radius: 30px;
-    margin: 0px 100px 0px 100px;  
+  background-color: black;
+  color: white;
+  width: 70%;
+  height: 45vh;
+  border-radius: 30px;
+  margin: 0px 100px 0px 100px;
 }
 
-.input-task-name, .input-details, .input-time {
-    padding: 6px;
+.hidden {
+  display: none;
+}
+
+.input-task-name,
+.input-details,
+.input-time {
+  padding: 6px;
 }
 
 .task-header {
-    display: flex;
-    font-size: 20px;
-    align-items: flex-start;
-    margin: 0 0 0 30px;
+  display: flex;
+  font-size: 20px;
+  align-items: flex-start;
+  margin: 0 0 0 30px;
 }
 
 input {
-    width: 90%;
-    height: 30px;
-    margin: 0;
-    border-radius: 3px;
+  width: 90%;
+  height: 30px;
+  margin: 0;
+  border-radius: 3px;
+  outline: none;
 }
 
 .input-button {
-    margin: 15px;
-    width: 90%;
-    height: 40px;
-    /* padding: 10px; */
-    font-size: 20px;
-    font-weight: bolder;
-    border-radius: 5px;
+    background-color: #ffe4c4;
+  margin: 15px;
+  width: 90%;
+  height: 40px;
+  /* padding: 10px; */
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 5px;
 }
-.input-button:hover{
-    background-color:red ;
+.input-button:hover {
+  background-color: #fbcb91;
 }
