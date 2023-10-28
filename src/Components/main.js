@@ -44,9 +44,9 @@ function Main({ task, toggleFormVisibility, isFormVisible, deleteTask }) {
           {task.map((task, index) => {
             return (
               <div className="task" key={index}>
-                <div className="task-name">
-                  <span className="task-heading">{task.name}</span>
-                  <span className="task-deadline">
+                <div className={`task-name ${device}`}>
+                  <span className={`task-heading ${device}`}>{task.name}</span>
+                  <span className={`task-deadline ${device}`}>
                     {task.time}&nbsp;
                     <button className="icon-button" onClick={() => deleteTask(index)}>
                     <i className="fa fa-solid fa-trash icon-delete"></i>

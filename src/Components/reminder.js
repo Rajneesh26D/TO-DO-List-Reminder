@@ -16,8 +16,8 @@ function Reminder(tasks) {
                     todayTasks.map((task, index) => (
                         <div className="reminder-task" key={index}>
                             <div className="reminder-task-name">
-                            <span className="reminder-task-heading">{task.name}</span>
-                            <span className="reminder-task-deadline">{task.time}</span>
+                            <span className={`reminder-task-heading ${device}`}>{task.name}</span>
+                            <span className={`reminder-task-deadline ${device}`}>{task.time}</span>
                                 </div>
                         </div>
                     ))

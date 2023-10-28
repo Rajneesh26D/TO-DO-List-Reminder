@@ -16,7 +16,7 @@
   background-color:#616F6E;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   width: 100%;
   height: auto;

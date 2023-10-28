@@ -33,6 +33,11 @@ function Input({addList, toggleFormVisibility, isFormVisible}) {
           setDetails("");
           toggleVisibility();
           const reminder = document.querySelector('.reminder-div')
+          if (reminder.classList.contains("mobile")) {
+            reminder.style.margin = "35px 100px 150px 100px"
+          } else {
+          reminder.style.margin = "200px 100px 25px 100px"
+          }
           reminder.style.transition = "margin 1s"
         }}
         className={`input-div ${device} ${isFormVisible ? "" : "hidden"}`}

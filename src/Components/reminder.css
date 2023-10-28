@@ -2,15 +2,16 @@
     background-color:rgb(7, 58, 50);
     color: white;
     width: 70%;
-    height: 45%;
+    height: 45vh;
     border-radius: 30px;
+margin: 200px 100px 25px 100px;
     box-shadow: rgba(166, 235, 246, 0.4) 5px 5px, rgba(170, 250, 215, 0.3) 10px 10px, rgba(155, 239, 208, 0.2) 15px 15px, rgba(46, 240, 188, 0.1) 20px 20px, rgba(8, 233, 192, 0.05) 25px 25px;
 
     &.mobile{
       width: 85%;
-      height: 25%;
+      height: 45vh;
       border-radius: 10px;
-      margin:70px 100px 140px;
+      margin:35px 100px 150px 100px;
     }
   }
 
@@ -59,11 +60,19 @@
 .reminder-task-heading {
     color: #00ff00; 
     padding-top: 2px;
+
+    &.mobile{
+       font-size: 15px;
+    }
   }
   .reminder-task-deadline {
     /* margin-left: 200px; */
     color: white;
     padding-top: 3px;
+
+    &.mobile{
+      font-size: 15px;
+    }
   }
 
 

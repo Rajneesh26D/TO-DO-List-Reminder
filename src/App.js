@@ -25,11 +25,7 @@ function App() {
   const toggleFormVisibility = (isFormVisible) => {
     setIsFormVisible(!isFormVisible);
     const reminder = document.querySelector('.reminder-div')
-    if (reminder.classList.contains("mobile")) {
-    reminder.style.margin = "25px 100px 65px 100px"
-    } else {
-      reminder.style.margin = "25px 100px 25px 100px"
-    }
+    reminder.style.margin = "25px 100px 25px 100px"
     reminder.style.transition = "margin 1s"
 
     // console.log(isFormVisible)
