@@ -2,14 +2,27 @@
   display: flex;
   flex-direction: row;
   text-align: center;
+  height: 100vh;
+
+  &.mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+  }
 }
 
 .right-side{
-  background-color: white;
+  background-color:#616F6E;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   width: 100%;
   height: auto;
   align-items: center;
+
+  &.mobile{
+    background-color:#889392;
+  }
 }

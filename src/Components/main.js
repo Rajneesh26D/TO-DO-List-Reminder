@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
+import "font-awesome/css/font-awesome.min.css"
+// import '@fortawesome/fontawesome-svg-core/styles.css'
 import "./main.css";
+import { useSelector } from "react-redux";
 
-function Main({ task, toggleFormVisibility, isFormVisible }) {
+function Main({ task, toggleFormVisibility, isFormVisible, deleteTask }) {
+
+  const { device } = useSelector((state) => state.windowSize);
+
+
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -16,26 +23,38 @@ function Main({ task, toggleFormVisibility, isFormVisible }) {
     toggleFormVisibility(isFormVisible);
   };
 
+  // const iconStyle = {
+  //   color: '#183153',
+  // };
+
   return (
-    <div className="main-div">
-      <div className="title">To-do list</div>
+    <div className={`main-div ${device}`}>
+      <div className={`title ${device}`}>To-do list</div>
       <br></br>
-      <div className="time-box">{showTime} </div>
-      <div className="task-bar">
+      <div className={`time-box ${device}`}>{showTime} </div>
+      <div className={`task-bar ${device}`}>
         <button className="add-task-button" onClick={toggleVisibility}>
           Add Task +
         </button>
-        <hr></hr>
+        <hr/>
         {task.length === 0 ? (
-          <div className="empty-list-message">The list is empty. Please Add your tasks</div>
+          <div className={`empty-list-message-main ${device}`}>The list is empty. Please Add your tasks</div>
         ) : (
-        <div className="list">
-          {task.map((task) => {
+        <div className={`list ${device}`}>
+          {task.map((task, index) => {
             return (
-              <div className="task">
+              <div className="task" key={index}>
                 <div className="task-name">
                   <span className="task-heading">{task.name}</span>
-                  <span className="task-deadline">{task.time}</span>
+                  <span className="task-deadline">
+                    {task.time}&nbsp;
+                    <button className="icon-button" onClick={() => deleteTask(index)}>
+                    <i className="fa fa-solid fa-trash icon-delete"></i>
+                    </button>
+                    </span>
+                  {/* <span className="icons">
+                    
+                  </span> */}
                 </div>
                 <div className="task-short">
                   

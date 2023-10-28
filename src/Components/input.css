@@ -2,9 +2,22 @@
   background-color: black;
   color: white;
   width: 70%;
-  height: 45vh;
+  height: 45%;
   border-radius: 30px;
   margin: 0px 100px 0px 100px;
+  overflow: scroll;
+
+
+  &.mobile{
+  width: 84%;
+  height: 28%;
+  border-radius: 10px;
+  margin: 13px 100px 130px 100px;
+  }
+}
+
+.input-div::-webkit-scrollbar {
+  display: none;
 }
 
 .hidden {
@@ -22,6 +35,12 @@
   font-size: 20px;
   align-items: flex-start;
   margin: 0 0 0 30px;
+
+  &.mobile{
+    font-size: 17px;
+    align-items: flex-start;
+    margin: 0 0 0 14px;
+  }
 }
 
 input {
@@ -33,7 +52,7 @@ input {
 }
 
 .input-button {
-    background-color: #ffe4c4;
+    background-color: #f99f32;
   margin: 15px;
   width: 90%;
   height: 40px;
@@ -41,7 +60,24 @@ input {
   font-size: 20px;
   font-weight: bolder;
   border-radius: 5px;
+
+  &.mobile{
+    margin: 6px;
+    width: 30%;
+    height: 40px;
+    /* padding: 10px; */
+    font-size: 16px;
+  }
 }
 .input-button:hover {
-  background-color: #fbcb91;
+  background-color: #c46e06;
+  cursor: pointer;
+}
+
+.char-count{
+  text-align: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  /* padding-right: 4px; */
+  color: #737373;
 }
