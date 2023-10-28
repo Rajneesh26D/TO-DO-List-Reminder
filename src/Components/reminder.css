@@ -85,6 +85,7 @@ margin: 200px 100px 25px 100px;
 
     &.mobile{
       font-size: 20px;
+      padding-top: 70px;
     font-weight: 450;
     }
   }

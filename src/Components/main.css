@@ -190,20 +190,16 @@
 }
 
 .empty-list-message-main {
-  display: flex;
-  align-items: center;
-  justify-self: center;
+  display: block;
   color: rgba(105, 242, 132, 0.928);
   font-size: 25px;
-  height: 100%;
-  /* padding-top: 150px; */
+  padding-top: 150px;
   font-weight: 600;
   font-style: italic;
 
   &.mobile{
-    height: 25vh;
     font-size: 20px;
-    padding: 20px 0;
+    padding: 90px 0;
     font-weight: 600;
   }
 }
