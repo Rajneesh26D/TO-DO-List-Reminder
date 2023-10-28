@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TO-DO-List-Reminder/static/css/main.1d11a81a.css",
-    "main.js": "/TO-DO-List-Reminder/static/js/main.a99e5334.js",
+    "main.css": "/TO-DO-List-Reminder/static/css/main.5d001d55.css",
+    "main.js": "/TO-DO-List-Reminder/static/js/main.1ca4fff5.js",
     "static/js/787.d4d1681e.chunk.js": "/TO-DO-List-Reminder/static/js/787.d4d1681e.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/TO-DO-List-Reminder/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/TO-DO-List-Reminder/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -9,12 +9,12 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/TO-DO-List-Reminder/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/TO-DO-List-Reminder/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/TO-DO-List-Reminder/index.html",
-    "main.1d11a81a.css.map": "/TO-DO-List-Reminder/static/css/main.1d11a81a.css.map",
-    "main.a99e5334.js.map": "/TO-DO-List-Reminder/static/js/main.a99e5334.js.map",
+    "main.5d001d55.css.map": "/TO-DO-List-Reminder/static/css/main.5d001d55.css.map",
+    "main.1ca4fff5.js.map": "/TO-DO-List-Reminder/static/js/main.1ca4fff5.js.map",
     "787.d4d1681e.chunk.js.map": "/TO-DO-List-Reminder/static/js/787.d4d1681e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d11a81a.css",
-    "static/js/main.a99e5334.js"
+    "static/css/main.5d001d55.css",
+    "static/js/main.1ca4fff5.js"
   ]
 }
